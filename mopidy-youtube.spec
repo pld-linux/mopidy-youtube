@@ -22,7 +22,9 @@ BuildRequires:	rpmbuild(macros) >= 1.714
 BuildRequires:	python-modules
 BuildRequires:	python-setuptools
 %endif
+Requires:	gstreamer-aac
 Requires:	gstreamer-neon
+Requires:	gstreamer-opus
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
