@@ -7,7 +7,7 @@
 %define 	module		mopidy_youtube
 %define 	egg_name	Mopidy_Youtube
 %define		pypi_name	Mopidy-Youtube
-Summary:	Mopidy extension that plays sound from YouTube
+Summary:	Mopidy extension for playing music from YouTube
 Name:		mopidy-youtube
 Version:	2.0.2
 Release:	1
@@ -26,7 +26,8 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Mopidy extension that plays sound from YouTube.
+This package provides a Mopidy extension for playing sound from
+YouTube videos.
 
 %prep
 %setup -q -n %{pypi_name}-%{version}
