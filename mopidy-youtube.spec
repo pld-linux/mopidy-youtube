@@ -19,14 +19,9 @@ URL:		https://github.com/mopidy/mopidy-youtube
 BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.714
 %if %{with python2}
-BuildRequires:	python-devel
+BuildRequires:	python-modules
 BuildRequires:	python-setuptools
 %endif
-Requires:	python-Mopidy >= 1.0
-Requires:	python-Pykka >= 1.1
-Requires:	python-pafy >= 0.3.35
-Requires:	python-requests >= 2.2.1
-Requires:	python-setuptools
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
